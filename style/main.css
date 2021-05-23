@@ -1,0 +1,40 @@
+/* Declaração de variáveis dentro do CSS */
+:root {
+  --vermelho: #E50914;
+  --preta: #141414;
+}
+
+/* Configuração inicial */
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--preta);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header .container {
+  display: flex; /* tem a propriedade de alinhar os elementos dentro em linha  */
+  flex-direction: row; /* Propriedade default de alinhamento do diplay: flex */
+  align-items: center; /* Alinha os elemento(tag h2 e tag nav) no centro */
+  justify-content: space-between; /* Justifica os elementos pondo espaço automático entre as tags h2 e nav*/
+}
+
+header .logo {
+  color: var(--vermelho);
+  font-family: "Arial Black", Arial, Times;
+  font-size: 40px;
+  margin-left: 5px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #AAA;
+  margin-right: 10px;
+}
+header nav a:hover {
+  color: #fff;
+}
