@@ -11,16 +11,19 @@
   box-sizing: border-box;
 }
 
+/* Elementos base */
+
 body {
   background: var(--preta);
   font-family: 'Times New Roman', Times, serif;
+  color: white;
 }
 
 header .container {
   display: flex; /* tem a propriedade de alinhar os elementos dentro em linha  */
   flex-direction: row; /* Propriedade default de alinhamento do diplay: flex */
   align-items: center; /* Alinha os elemento(tag h2 e tag nav) no centro */
-  justify-content: space-between; /* Justifica os elementos pondo espaço automático entre as tags h2 e nav*/
+  justify-content: space-between; /* Justifica os elementos pondo espaço automático entre as tags h2 e nav de maneira horizontal*/
 }
 
 header .logo {
@@ -37,4 +40,26 @@ header nav a {
 }
 header nav a:hover {
   color: #fff;
+}
+
+/* Filmes principal */
+.filme-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(../img/capa-house.jpg);
+
+  height: 400px;
+  background-size: cover; /* Define-Especifica a imagem para área de cobertura da box-model*/
+
+  display: flex;
+  flex-direction: column; /* Propriedade de alinhamento para coluna, um elemento abaixo do outro  */
+  justify-content: center; /* Sempre segue a direção da propriedade flex-direction, ou seja irá deixar o conteúdo centralizado  (forma vertical) */
+  align-items: flex-start; /* Inicia o alinhamento dos elementos da esquerda para a direita */
+}
+
+.filme-principal .descricao {
+  margin-bottom: 40px;
+}
+
+.titulo {
+  font-size: 40px;
 }
