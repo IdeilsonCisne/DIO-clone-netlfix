@@ -10,5 +10,7 @@ Criando um clone do Netflix utilizando HTML5, CSS3, Flexbox e jQuery através do
 
 
 Link do código original: https://github.com/felipeAguiarCode/netflix-clone
+
+Link para visualizar o site: [Clique aqui](https://ideilsoncisne.github.io/DIO-clone-netlfix/)
 ### Tela
 ![Print da tela](img/printTela.png)
